@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.Transient;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
 @Document(collection = "Notifications")
@@ -22,6 +23,7 @@ public class NotificationClass {
     private String date;
     private String status;
     private String publisher;
-    private  String dateModified;
+    private String dateModified;
+
 
 }
