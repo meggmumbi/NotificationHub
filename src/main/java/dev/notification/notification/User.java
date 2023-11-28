@@ -8,19 +8,18 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "users")
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
 public class User {
     @Id
-    private long Userid;
+    private long userId;
 
     private String name;
     private String contacts;
     private String email;
     private String password;
 
-    public User(long Userid, String name, String contacts, String email, String password) {
-        this.Userid = Userid;
+    public User(long UserId, String name, String contacts, String email, String password) {
+        this.userId = UserId;
         this.name = name;
         this.contacts = contacts;
         this.email = email;

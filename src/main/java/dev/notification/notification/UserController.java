@@ -19,7 +19,7 @@ public class UserController {
 
     @GetMapping
     public ResponseEntity<List<User>> getAllUsers(){
-        return new ResponseEntity<List<User>>(_userService.allUsers(), HttpStatus.OK)
+        return new ResponseEntity<List<User>>(_userService.allUsers(), HttpStatus.OK);
     }
 
     @GetMapping("/{UserId}")
