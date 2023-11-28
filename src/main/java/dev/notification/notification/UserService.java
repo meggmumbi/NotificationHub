@@ -27,13 +27,13 @@ public class UserService {
     }
 
     public User createUser(
-            Long UserId,
+            Long userId,
             String name,
             String contacts,
             String email,
             String password
     ){User newUser = _userRepository.insert(
-                new User(UserId, name, contacts, email, password)
+                new User(userId, name, contacts, email, password)
         );
         return newUser;
     }
