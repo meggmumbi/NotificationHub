@@ -1,5 +1,4 @@
 package dev.notification.notification;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,6 +13,4 @@ public class Sequence {
     @Id
     private String id;
     private long seq;
-
-
 }

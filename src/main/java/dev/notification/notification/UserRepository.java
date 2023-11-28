@@ -1,9 +1,12 @@
 package dev.notification.notification;
+
 import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
+
+import java.util.Optional;
+
 @Repository
-public interface SequenceRepository extends MongoRepository<Sequence, ObjectId> {
-
-
+public interface UserRepository extends MongoRepository<User, ObjectId> {
+Optional<User> findByUserId(Long UserId);
 }
